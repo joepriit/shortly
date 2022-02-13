@@ -1,0 +1,40 @@
+.notice {
+  background: #3b3054;
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.notice__title {
+  font-size: 38px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.notice__button {
+  width: 200px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  font-size: 18px;
+  background: #2acfcf;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.notice__button:hover {
+  background: #8feded;
+}
+
+@media (max-width: 820px) {
+  .notice {
+    background-image: url(../images/bg-boost-mobile.svg);
+    background-size: 90%;
+    background-position: top right;
+    padding: 30px;
+  }
+}

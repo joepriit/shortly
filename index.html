@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/landing.css" />
+    <link rel="stylesheet" href="styles/shortener.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/notice.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shortly</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container--flex">
+        <a class="header__logo" href="#">
+          <img src="./images/logo.svg" />
+        </a>
+
+        <nav class="nav nav--menu">
+          <a class="nav__link" href="#">Features</a>
+          <a class="nav__link" href="#">Pricing</a>
+          <a class="nav__link" href="#">Resources</a>
+        </nav>
+
+        <nav class="nav nav--actions">
+          <a class="nav__link" href="#">Login</a>
+          <a class="nav__link nav__link--active" href="#">Sign Up</a>
+        </nav>
+
+        <nav class="nav nav--bars">
+          <a id="toggle" class="nav__link" href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav id="nav-mobile" class="nav nav--mobile">
+        <div class="nav__inner">
+          <a class="nav__link" href="#">Features</a>
+          <a class="nav__link" href="#">Pricing</a>
+          <a class="nav__link" href="#">Resources</a>
+          <hr class="nav__divider" />
+          <a class="nav__link" href="#">Login</a>
+          <a class="nav__link nav__link--active" href="#">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+
+    <section class="landing">
+      <div class="container container--landing">
+        <div class="landing__left">
+          <h1 class="landing__title">More than just<br />shorter links</h1>
+
+          <p class="landing__description">
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+
+          <button class="landing__button" type="button">Get Started</button>
+        </div>
+        <div class="landing__right">
+          <img
+            class="landing__illustration"
+            src="./images/illustration-working.svg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="shortener">
+      <div class="container container--table">
+        <form id="form" class="shortener__form">
+          <input
+            id="form-input"
+            class="shortener__input"
+            type="text"
+            placeholder="Shorten a link here..."
+          />
+
+          <span
+            id="error-message-mobile"
+            class="shortener__error-message error-message--mobile"
+          ></span>
+
+          <button id="submit" class="shortener__button" type="button">
+            Shorten it!
+          </button>
+
+          <span
+            id="error-message-desktop"
+            class="shortener__error-message error-message--desktop"
+          ></span>
+        </form>
+
+        <div id="links" class="shortener__links"></div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h1 class="about__headline">Advanced Statistics</h1>
+        <p class="about__description">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+
+        <div class="about__card-container">
+          <div class="about__card">
+            <img class="about__img" src="./images/icon-brand-recognition.svg" />
+            <h5 class="about__title">Brand Recognition</h5>
+            <p class="about__p">
+              Boost your brand recognition with each click. Generic links don't
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div>
+          <div class="about__card">
+            <img class="about__img" src="./images/icon-detailed-records.svg" />
+            <h5 class="about__title">Detailed Records</h5>
+            <p class="about__p">
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+          <div class="about__card">
+            <img
+              class="about__img"
+              src="./images/icon-fully-customizable.svg"
+            />
+            <h5 class="about__title">Fully Customizable</h5>
+            <p class="about__p">
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <div class="container">
+        <h1 class="notice__title">Boost your links today</h1>
+        <button type="button" class="notice__button">Get Started</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container container--flex">
+        <div class="footer__section">
+          <img src="./images/logo-white.svg" />
+        </div>
+        <div class="footer__section">
+          <h5 class="footer__title">Features</h5>
+
+          <nav class="nav nav--footer">
+            <a class="nav__link" href="#">Link Shortening</a>
+            <a class="nav__link" href="#">Branded Links</a>
+            <a class="nav__link" href="#">Analytics</a>
+          </nav>
+        </div>
+        <div class="footer__section">
+          <h5 class="footer__title">Resources</h5>
+
+          <nav class="nav nav--footer">
+            <a class="nav__link" href="#">Blog</a>
+            <a class="nav__link" href="#">Developers</a>
+            <a class="nav__link" href="#">Support</a>
+          </nav>
+        </div>
+        <div class="footer__section">
+          <h5 class="footer__title">Company</h5>
+
+          <nav class="nav nav--footer">
+            <a class="nav__link" href="#">About</a>
+            <a class="nav__link" href="#">Our Team</a>
+            <a class="nav__link" href="#">Careers</a>
+            <a class="nav__link" href="#">Contact</a>
+          </nav>
+        </div>
+        <div class="footer__section">
+          <a class="footer__social-link" href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a class="footer__social-link" href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="footer__social-link" href="#">
+            <i class="fab fa-pinterest"></i>
+          </a>
+          <a class="footer__social-link" href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/9546188ced.js"
+      crossorigin="anonymous"
+      SameSite="none"
+    ></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

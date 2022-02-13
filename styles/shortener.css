@@ -1,0 +1,170 @@
+.shortener {
+  background: #eff1f7;
+}
+
+.shortener__form {
+  display: block;
+  background: #232127;
+  padding: 60px 40px;
+  border-radius: 10px;
+  position: relative;
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+
+.shortener__input {
+  width: calc(100% - 279px);
+  margin-right: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-size: 18px;
+}
+
+.shortener__input.input--error {
+  border: 2px solid #ff0000;
+}
+
+.shortener__error-message {
+  display: none;
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.error-message--show {
+  display: block;
+}
+
+.error-message--desktop {
+  margin-top: 10px;
+}
+
+.error-message--mobile {
+  display: none !important;
+}
+
+.shortener__button {
+  width: 200px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-size: 18px;
+  background: #2acfcf;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.shortener__button:hover {
+  background: #8feded;
+}
+
+.shortener__links {
+  display: block;
+}
+
+.shortener__link-container {
+  padding: 20px 40px;
+  display: flex;
+  background: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.shortener__original-link-column,
+.shortener__short-link-column,
+.shortener__copy-button-column {
+  flex: 1;
+}
+
+.shortener__short-link-column {
+  flex: 0 0 auto;
+  padding: 0 40px;
+  color: #2acfcf;
+}
+
+.shortener__copy-button-column {
+  flex: 0 0 auto;
+}
+
+.shortener__copy-button {
+  width: 200px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-size: 18px;
+  background: #2acfcf;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.shortener__copy-button:hover {
+  background: #8feded;
+}
+
+.copy-button--success {
+  background: #35323e;
+  color: #ffffff;
+}
+
+@media (max-width: 820px) {
+  .shortener__form {
+    background-image: url(../images/bg-shorten-mobile.svg);
+    background-size: 90%;
+    background-position: top right;
+    padding: 30px;
+  }
+
+  .shortener__input,
+  .shortener__button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .shortener__input {
+    width: calc(100% - 44px);
+  }
+
+  .shortener__button {
+    margin-top: 20px;
+  }
+
+  .error-message--desktop {
+    display: none !important;
+  }
+
+  .error-message--mobile {
+    display: inline !important;
+  }
+
+  .shortener__link-container {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .shortener__original-link-column,
+  .shortener__short-link-column,
+  .shortener__copy-button-column {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+  }
+
+  .shortener__copy-button-column {
+    margin-bottom: 0;
+  }
+
+  .shortener__original-link-column {
+    border-bottom: 1px solid #eff1f7;
+    padding: 0 20px;
+    padding-bottom: 10px;
+  }
+
+  .shortener__copy-button {
+    width: 100%;
+  }
+}

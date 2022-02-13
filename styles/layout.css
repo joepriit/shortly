@@ -1,0 +1,20 @@
+.container {
+  width: calc(100% - 40px);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container--flex {
+  display: flex;
+}
+
+.container--table {
+  display: table;
+}
+
+.container--landing {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
